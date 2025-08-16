@@ -21,17 +21,15 @@ This app lets users generate strong, customizable passwords with the following o
 
 ### 📂 Project Structure
 ```bash
-password-generator/
- ┣ public/          # Static files
+PasswordGenerator/
  ┣ src/
- ┃ ┣ components/    # Reusable components (Button, Input, etc.)
+ ┃ ┣ Assets/    # icon 
  ┃ ┣ App.jsx        # Main app component
  ┃ ┣ main.jsx       # Entry point
  ┃ ┗ index.css      # Tailwind base styles
  ┣ package.json
  ┣ vite.config.js
  ┗ README.md
-
 ```
 
 ### ⚡ Features

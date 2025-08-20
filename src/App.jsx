@@ -36,11 +36,11 @@ function App() {
   return (
     <>
       <div className="relative isolate overflow-hidden bg-gray-900 py-10 sm:py-20">
-        <div className="w-full max-w-md mx-auto shadow-md mt-0 rounded-lg p-2 text-emerald-50">
-          <h1 className="text-5xl font-sans font-semibold text-center text-stone-50 mb-4">
+        <div className="w-full max-w-2xl mx-auto lg:max-w-4xl shadow-md mt-0 rounded-lg p-2 text-emerald-50  ">
+          <h1 className="text-5xl sm:text-7xl font-sans font-semibold text-center mb-4 tracking-tight  text-white ">
             Password ⚡️ Shield
           </h1>
-          <p className="mb-4 text-lg text-center text-gray-300">
+          <p className="mb-4 text-sm font-bold sm:text-2xl  text-center text-gray-300">
             "Strong security starts with stronger passwords"{" "}
           </p>
           <div className="flex-shadow rounded-lg overflow-hidden mb-4 py-5 sm:py-5 flex gap-1">
@@ -64,7 +64,7 @@ function App() {
               {copied ? "Copied!" : "Copy"}
             </button>
           </div>
-          <div className="flex text-sm gap-x-4">
+          <div className="flex justify-center text-sm gap-x-2 mx-auto max-w-2xl lg:max-w-4xl">
             <div className="flex item-center gap-x-2">
               <input
                 type="range"
@@ -135,7 +135,7 @@ function App() {
         <div className="absolute inset-0 -z-10 bg-[radial-gradient(45rem_50rem_at_top,var(--color-indigo-500),transparent)] opacity-10"></div>
         <div className="absolute inset-y-0 right-1/2 -z-10 mr-16 w-[200%] origin-bottom-left skew-x-[-30deg] bg-gray-900 shadow-xl ring-1 shadow-indigo-500/5 ring-white/5 sm:mr-28 lg:mr-0 xl:mr-16 xl:origin-center"></div>
         <div className="mx-auto max-w-2xl lg:max-w-4xl">
-          <h2 className="text-2xl mb-8 font-semibold tracking-tight text-center text-white sm:text-7xl">
+          <h2 className="text-6xl mb-8 font-semibold tracking-tight text-center text-white sm:text-8xl">
             Brew 🅽 Code
           </h2>
           <blockquote className="text-center py-5 text-xl/8 font-light text-white sm:text-2xl/9">
@@ -148,8 +148,8 @@ function App() {
             </p>
           </blockquote>
           <figcaption className="mt-10">
-            <div className="mt-4 flex items-center text-2xl justify-center space-x-3 ">
-              <div className="font-bold  text-white">Himanshu Nishad</div>
+            <div className="mt-4 flex items-center justify-center space-x-2 w-full max-w-2xl mx-auto lg:max-w-8xl">
+              <div className="font-bold text-xl sm:text-2xl text-white">Himanshu Nishad</div>
               <svg
                 viewBox="0 0 2 2"
                 width="3"
@@ -159,13 +159,13 @@ function App() {
               >
                 <circle r="1" cx="1" cy="1" />
               </svg>
-              <div className="text-gray-400">Founder of "Brew 🅽 Code"</div>
+              <div className="font-bold text-sm sm:text-2xl text-gray-400">Founder of "Brew 🅽 Code"</div>
             </div>
           </figcaption>
         </div>
       </section>
 
-      <footer className="bg-black py-6 text-center text-gray-300">
+      <footer className="bg-black py-4 text-center text-gray-300 fixed bottom-0 left-0 w-full px-4 text-sm sm:text-base">
         &copy; {new Date().getFullYear()} HMNSD, All rights reserved.
       </footer>
     </>

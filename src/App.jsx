@@ -136,10 +136,10 @@ function App() {
         <div className="absolute inset-0 -z-10 bg-[radial-gradient(45rem_50rem_at_top,var(--color-indigo-500),transparent)] opacity-10"></div>
         <div className="absolute inset-y-0 right-1/2 -z-10 mr-16 w-[200%] origin-bottom-left skew-x-[-30deg] bg-gray-900 shadow-xl ring-1 shadow-indigo-500/5 ring-white/5 sm:mr-28 lg:mr-0 xl:mr-16 xl:origin-center"></div>
         <div className="mx-auto max-w-2xl lg:max-w-4xl">
-          <h2 className="text-6xl mb-8 font-semibold tracking-tight text-center text-white sm:text-8xl">
+          <h2 className="text-6xl  font-semibold tracking-tight text-center text-white sm:text-8xl">
             Brew 🅽 Code
           </h2>
-          <blockquote className="text-center py-5 text-xl/8 font-light text-white sm:text-2xl/9">
+          <blockquote className="text-center sm:py-10 py-5 text-xl font-light text-white sm:text-2xl">
             <p>
               "Place where an idea turned into a product"
               </p> 
@@ -148,8 +148,8 @@ function App() {
               open-source excellence
             </p>
           </blockquote>
-          <figcaption className="mt-10">
-            <div className="mt-4 flex items-center justify-center space-x-2 w-full max-w-2xl mx-auto lg:max-w-8xl">
+          <figcaption className="sm:mt-5">
+            <div className="flex items-center justify-center space-x-2 w-full max-w-2xl mx-auto lg:max-w-8xl">
               <div className="font-bold text-xl sm:text-2xl text-white">Himanshu Nishad</div>
               <svg
                 viewBox="0 0 2 2"

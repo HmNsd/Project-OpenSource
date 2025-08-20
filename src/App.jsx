@@ -35,15 +35,16 @@ function App() {
 
   return (
     <>
-      <div className="relative isolate overflow-hidden bg-gray-900 py-10 sm:py-20">
-        <div className="w-full max-w-2xl mx-auto lg:max-w-4xl shadow-md mt-0 rounded-lg p-2 text-emerald-50  ">
-          <h1 className="text-5xl sm:text-7xl font-sans font-semibold text-center mb-4 tracking-tight  text-white ">
+      <div className="relative isolate overflow-hidden bg-gray-900 py-10 sm:py-20 h-[47vh]">
+        <div className="w-full max-w-2xl mx-auto lg:max-w-4xl  sm:mb-4 sm:mt-2 mt-10 rounded-lg p-2 text-emerald-50  ">
+          <h1 className="text-5xl sm:text-7xl font-sans font-semibold text-center  tracking-tight  text-white ">
             Password ⚡️ Shield
           </h1>
           <p className="mb-4 text-sm font-bold sm:text-2xl  text-center text-gray-300">
             "Strong security starts with stronger passwords"{" "}
           </p>
           <div className="flex-shadow rounded-lg overflow-hidden mb-4 py-5 sm:py-5 flex gap-1">
+            
             <input
               type="text"
               value={password}
@@ -64,8 +65,8 @@ function App() {
               {copied ? "Copied!" : "Copy"}
             </button>
           </div>
-          <div className="flex justify-center text-sm gap-x-2 mx-auto max-w-2xl lg:max-w-4xl">
-            <div className="flex item-center gap-x-2">
+          <div className=" justify-center grid sm:grid-cols-2 sm:ml-30 text-sm gap-y-8 mx-auto max-w-2xl lg:max-w-4xl">
+            <div className="flex item-center gap-x-4">
               <input
                 type="range"
                 className="cursor-pointer"
@@ -90,7 +91,7 @@ function App() {
                   setCopied((prev) => (prev == true ? !prev : prev));
                 }}
               />
-              <label htmlFor="numberInput">Numbers</label>
+              <label htmlFor="numberInput">Number</label>
               <input
                 type="checkbox"
                 defaultChecked={charAllowed}
@@ -100,7 +101,7 @@ function App() {
                   setCopied((prev) => (prev == true ? !prev : prev));
                 }}
               />
-              <label htmlFor="charInput">Special Chars</label>
+              <label htmlFor="charInput">Special Char</label>
             </div>
           </div>
         </div>
@@ -131,7 +132,7 @@ function App() {
         </div>
       </div>
 
-      <section className="relative isolate overflow-hidden bg-gray-900 px-6 py-10 sm:py-20   lg:px-8">
+      <section className="relative isolate overflow-hidden bg-gray-900 px-6 py-10 sm:py-12 lg:px-8 h-[47vh]">
         <div className="absolute inset-0 -z-10 bg-[radial-gradient(45rem_50rem_at_top,var(--color-indigo-500),transparent)] opacity-10"></div>
         <div className="absolute inset-y-0 right-1/2 -z-10 mr-16 w-[200%] origin-bottom-left skew-x-[-30deg] bg-gray-900 shadow-xl ring-1 shadow-indigo-500/5 ring-white/5 sm:mr-28 lg:mr-0 xl:mr-16 xl:origin-center"></div>
         <div className="mx-auto max-w-2xl lg:max-w-4xl">
@@ -165,7 +166,7 @@ function App() {
         </div>
       </section>
 
-      <footer className="bg-black py-4 text-center text-gray-300 fixed bottom-0 left-0 w-full px-4 text-sm sm:text-base">
+      <footer className="bg-black py-4 text-center text-gray-300 fixed bottom-0 left-0 w-full px-4 h-[6vh]">
         &copy; {new Date().getFullYear()} HMNSD, All rights reserved.
       </footer>
     </>
